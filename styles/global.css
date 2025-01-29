@@ -11,12 +11,14 @@
 
   --fontsize: 18px;
 
-  --ffamily-barlow: 'Barlow', sans-serif;
+  --ffamily-barlow: 'Barlow', system-ui, sans-serif;
   --ffamily-fraunces: 'Fraunces', serif;
 
   --font-weight-barlow: 600;
   --font-weight-fraunces-1: 700;
   --font-weight-fraunces-2: 900;
+
+  --container-max-width: 1200px;
 }
 
 *,
@@ -30,6 +32,8 @@
 body {
   font-family: var(--ffamily-barlow);
   width: 100%;
+  line-height: 1.5;
+  /* overflow-x: hidden; */
 }
 
 ul,
@@ -56,7 +60,7 @@ img {
   image-rendering: pixelated;
   background-attachment: fixed;
   background-position: center;
-  /* margin-bottom: 5rem; */
+  margin-bottom: 5rem;
 }
 
 .header-styles {
@@ -86,7 +90,10 @@ img {
   font-weight: var(--font-weight-barlow);
   font-size: var(--fontsize);
   font-family: var(--ffamily-barlow);
-  /* letter-spacing: 1px; */
+}
+
+.nav-hamburguer {
+  display: none;
 }
 
 .nav-button {
@@ -222,10 +229,10 @@ img {
 
 .testimonial-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin-top: 2rem;
-  width: 1250px;
+  width: 100%;
 }
 
 h4 {
@@ -340,4 +347,40 @@ h4 {
 .footer-icon {
   width: 20px;
   height: 20px;
+}
+
+/* QUERIES */
+
+@media (max-width: 600px) {
+  .header-container {
+    width: 100%;
+    height: 41rem;
+    background-image: url(../assets/mobile/mediaNaranjaAbajo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 500px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+  }
+  .header-styles {
+    display: flex;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .nav-logo {
+    padding: 1rem 0 0 2rem;
+  }
+
+  .nav-list {
+    /* margin-top: 1rem; */
+    display: none;
+    background-color: black;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
