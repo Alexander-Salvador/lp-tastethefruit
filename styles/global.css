@@ -58,7 +58,6 @@ img {
   background-size: cover;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
-  /* background-attachment: fixed; */
   background-position: center;
 }
 
@@ -324,8 +323,7 @@ h4 {
 /* SLIDER SECTION */
 .grid-slider {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .mil-image,
@@ -683,35 +681,33 @@ h4 {
   /* GRID SLIDER */
   .grid-slider {
     width: 100%;
-    /* height: 20rem; */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .mil-image,
   .orange-image,
   .cono-image,
   .cups-image {
-    height: 15rem;
-    /* background-repeat: no-repeat;
-    background-position: center;
+    /* height: 21rem; */
+    /* background-size: contain; */
+    /* background-position: top; */
     image-rendering: crisp-edges;
-    image-rendering: pixelated; */
+    /* image-rendering: pixelated; */
+    background-size: 30rem 100%;
+    background-repeat: no-repeat;
   }
 
   .milk-image {
     background-image: url(../assets/mobile/botellaleche.jpg);
-    background-size: cover;
   }
 
   .orange-image {
     background-image: url(../assets/mobile/mediaNaranja.jpg);
-    background-size: cover;
   }
   .cono-image {
     background-image: url(../assets/mobile/helado.jpg);
-    background-size: cover;
   }
   .cups-image {
     background-image: url(../assets/mobile/cubosDeAzucar.jpg);
-    background-size: cover;
   }
 }
