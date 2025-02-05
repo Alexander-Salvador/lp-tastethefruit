@@ -468,6 +468,7 @@ h4 {
     margin-top: 3rem;
     margin-right: 3.2rem;
     padding-top: 1rem;
+    /* margin: 0 auto; */
     border-radius: 2rem;
   }
 
@@ -688,12 +689,9 @@ h4 {
   .orange-image,
   .cono-image,
   .cups-image {
-    /* height: 21rem; */
-    /* background-size: contain; */
-    /* background-position: top; */
+    height: 15rem;
     image-rendering: crisp-edges;
-    /* image-rendering: pixelated; */
-    background-size: 30rem 100%;
+    image-rendering: pixelated;
     background-repeat: no-repeat;
   }
 
