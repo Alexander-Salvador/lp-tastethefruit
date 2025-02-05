@@ -689,7 +689,7 @@ h4 {
   .orange-image,
   .cono-image,
   .cups-image {
-    height: 15rem;
+    height: 12rem;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     background-repeat: no-repeat;
