@@ -28,10 +28,10 @@
     <header class="header-container">
       <div class="header-styles">
         <div class="nav-logo">
-          <img src="assets/logo.svg" alt="logo" />
+          <img src="src/assets/logo.svg" alt="logo" />
         </div>
         <nav class="nav-menu">
-          <ul class="nav-list">
+          <ul id="nav_list" class="nav-list">
             <li class="nav-items"><a href="#" class="nav-links">About</a></li>
             <li class="nav-items">
               <a href="#" class="nav-links">Services</a>
@@ -45,7 +45,7 @@
           </ul>
         </nav>
         <img
-          src="assets/icon-hamburger.svg"
+          src="src/assets/icon-hamburger.svg"
           alt="nav-menu-mobile"
           class="nav-hamburguer"
           id="nav-hamburguer-mobile"
@@ -58,46 +58,47 @@
       </section>
     </header>
     <main>
-      <!-- GRID SECTION-->
-      <div class="grid-container">
-        <!-- SECTION 1 -->
+      <!-- SECTION 1 - ID SECTION-->
+      <div class="flex-container">
+        <!-- Flex 1 -->
         <section class="section1">
-          <h2>Frescura garantizada</h2>
-          <p>Cosechadas en su punto óptimo y transportadas en cadena de frío</p>
-          <a href="">Learn more</a>
-        </section>
-
-        <!-- SECTION 2 -->
-        <section class="section2-image"></section>
-
-        <!-- SECTION 3 -->
-        <section class="section3-image"></section>
-
-        <!-- SECTION 4 -->
-        <section class="section4">
-          <h2>Agricultura sostenible</h2>
-          <p>Cultivadas con métodos ecológicos y comercio justo</p>
-          <a href="">Learn more</a>
-        </section>
-
-        <!-- SECTION 5 -->
-        <section class="section5-image">
-          <div class="description-sec5">
-            <h2>Orígenes únicos</h2>
-            <p>Procedentes de más de 20 países tropicales</p>
+          <div class="flex1-left">
+            <h2>Frescura garantizada</h2>
+            <p>
+              Cosechadas en su punto óptimo y transportadas en cadena de frío
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div class="flex1-right">
+            <div class="egg_image_right"></div>
           </div>
         </section>
 
-        <!-- SECTION 6 -->
-        <section class="section6-image">
-          <div class="description-sec6">
-            <h2>Taste The Fruit</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem libero, minus minima necessitatibus ab unde, sequi,
-              quae nesciunt ratione natus iure voluptates adipisci numquam
-              perferendis
-            </p>
+        <!-- Flex 2-->
+        <section class="section2">
+          <div class="flex2-left"></div>
+          <div class="flex2-right">
+            <h2>Agricultura sostenible</h2>
+            <p>Cultivadas con métodos ecológicos y comercio justo</p>
+            <a href="">Learn more</a>
+          </div>
+        </section>
+
+        <!-- Flex 3 -->
+        <section class="section3">
+          <div class="flex3-left">
+            <!-- <div class="flex3-left"> -->
+            <!-- <div class="fruit_image_left"></div> -->
+            <h2>Productos de calidad</h2>
+            <p>Selección de frutas y verduras de primera calidad</p>
+            <a href="">Learn more</a>
+          </div>
+
+          <div class="flex3-right">
+            <!-- <div class="fruit_image_right"></div> -->
+            <h2>Productos de calidad</h2>
+            <p>Selección de frutas y verduras de primera calidad</p>
+            <a href="">Learn more</a>
           </div>
         </section>
       </div>
@@ -109,7 +110,7 @@
           <div class="testimonials-card1">
             <img
               class="card1"
-              src="assets/image-emily.jpg"
+              src="src/assets/image-emily.jpg"
               alt="Client image-emily"
             />
             <p>
@@ -124,7 +125,7 @@
           <div class="testimonials-card2">
             <img
               class="card2"
-              src="assets/image-emily.jpg"
+              src="src/assets/image-emily.jpg"
               alt="Client image-emily"
             />
             <p>
@@ -139,7 +140,7 @@
           <div class="testimonials-card3">
             <img
               class="card3"
-              src="assets/image-emily.jpg"
+              src="src/assets/image-emily.jpg"
               alt="Client image-emily"
             />
             <p>
@@ -173,10 +174,10 @@
           <a class="footer-a" href="">Projects</a>
         </li>
         <div class="footer-socialmedia">
-          <img class="footer-icon" src="assets/icon-facebook.svg" alt="" />
-          <img class="footer-icon" src="assets/icon-instagram.svg" alt="" />
-          <img class="footer-icon" src="assets/icon-twitter.svg" alt="" />
-          <img class="footer-icon" src="assets/icon-pinterest.svg" alt="" />
+          <img class="footer-icon" src="src/assets/icon-facebook.svg" alt="" />
+          <img class="footer-icon" src="src/assets/icon-instagram.svg" alt="" />
+          <img class="footer-icon" src="src/assets/icon-twitter.svg" alt="" />
+          <img class="footer-icon" src="src/assets/icon-pinterest.svg" alt="" />
         </div>
       </nav>
     </section>
